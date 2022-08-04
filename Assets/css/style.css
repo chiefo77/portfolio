@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;
+    text-decoration: none;
+    line-height: 1.6;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* sass */
+:root{
+    --main-color: #880707;
+    --second-color: #f3fbb5;
+    --white:#fff;
+    --black: #000;
+    --light-black:#726f6f;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* navbar */
+/* navbar */
+.navbar{
+    background: var(--black);
+color: var(--white);    
+    display: flex;
+    align-items: center; 
+}
+
+.navbar .logo{
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+span{
+    color: var(--main-color);
+}
+.navbar ul{
+    flex-grow: 1;
+    text-align: end;
+}
+
+.navbar ul li{
+    display: inline;
+}
+
+.navbar ul li a{
+    color: var(--white);
+    padding: 1rem 1.5rem;
+}
+
+.navbar ul li a.active{
+    color: var(--main-color)
+}
+.navbar ul li a:hover{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+/* intro section */
+#intro{
+    background: #E8EBF0;
+    color: var(--main-color)
+    
+}
+
+#intro .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#intro .container .intro p{
+    color: var(--light-black);
+    font-weight: bold;
+}
+
+#intro .container .intro h1{
+    color: var(--light-black);
+    font-weight: 400;
+    font-size: 3rem;
+}
+#intro .container .intro ul li{
+    display: inline;
+    
+    
+}
+#intro .container img{
+    width: 80%;
+}
